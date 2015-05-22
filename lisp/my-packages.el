@@ -17,6 +17,7 @@
     monokai-theme
     multiple-cursors
     nyan-mode
+    projectile
     rainbow-mode
     scss-mode
     web-mode
