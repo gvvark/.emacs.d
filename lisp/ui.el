@@ -7,7 +7,9 @@
    (quote
     ("a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" default)))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(git-gutter:modified-sign "~")
+ '(git-gutter:lighter " GG"))
 (add-hook 'emacs-startup-hook (lambda () (split-window-right)))
 (custom-set-faces
  '(cursor ((t (:background "#FF0000" :foreground "#272822" :inverse-video t))))
@@ -30,7 +32,11 @@
 (scroll-bar-mode -1)
 
 (global-linum-mode 1)
+
 (global-git-gutter-mode +1)
+(set-face-background 'git-gutter:modified "#FFFC40")
+(set-face-background 'git-gutter:added    "#00FF00")
+(set-face-background 'git-gutter:deleted  "#FF0000")
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
