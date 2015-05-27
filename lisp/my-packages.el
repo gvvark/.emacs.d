@@ -20,6 +20,7 @@
     projectile
     rainbow-mode
     scss-mode
+    smartparens
     web-mode
   ))
 

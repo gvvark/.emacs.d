@@ -45,8 +45,13 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (setq web-mode-markup-indent-offset 2)
+(setq web-mode-enable-auto-pairing -1)
 
 (add-hook 'after-init-hook 'global-company-mode)
 (require 'multiple-cursors)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(smartparens-global-mode t)
+(require 'smartparens-config)
+(sp-pair "<%" "%>")
