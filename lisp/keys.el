@@ -8,3 +8,4 @@
 ;; neotree
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
+(load-library "neotree_text")

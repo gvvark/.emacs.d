@@ -14,7 +14,8 @@
 (custom-set-faces
  '(cursor ((t (:background "#FF0000" :foreground "#272822" :inverse-video t))))
  '(hl-indent-block-face-1 ((t (:background "#333"))))
- '(hl-indent-face ((t (:inherit (quote hl-indent-block-face-1))))))
+ '(hl-indent-face ((t (:inherit (quote hl-indent-block-face-1)))))
+ '(sp-pair-overlay-face ((t nil))))
 (set-face-attribute 'default nil :height 150)
 (set-face-attribute 'region  nil :background "#ebebeb")
 (add-hook 'prog-mode-hook 'hl-indent-mode)
