@@ -1,6 +1,7 @@
 ;;; ui.el
 
 (require 'hl-indent)
+
 (custom-set-variables
  '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes
@@ -16,6 +17,7 @@
  '(hl-indent-block-face-1 ((t (:background "#333"))))
  '(hl-indent-face ((t (:inherit (quote hl-indent-block-face-1)))))
  '(sp-pair-overlay-face ((t nil))))
+(set-face-attribute 'default nil :family "Office Code Pro D")
 (set-face-attribute 'default nil :height 150)
 (set-face-attribute 'region  nil :background "#ebebeb")
 (add-hook 'prog-mode-hook 'hl-indent-mode)
